@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teks Anekdot</title>
+    <style>
+        .Warna1 {
+            background-color: skyblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .TeksAnekdot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Cerita {
+            background-image: linear-gradient(to right, aliceblue, cyan);
+            background-size: 100% 100%;
+            padding: 10px;
+            display: flex;  
+        }
+
+        .Button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            flex-direction: column;
+            display: flex;
+            max-width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .Button:hover {
+            background-color: #3e8e41;
+        }
+
+        .Button {
+            display: flex;
+            align-items: center;
+        }
+
+        .Button button {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .Button span {
+            margin-left: 10px;
+        }
+
+        .CeritaSemua {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20;
+            text-align: center;
+        }
+
+        .body {
+            padding: 0;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .Button {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Warna1">
+        <div class="TeksAnekdot">
+            <h1>Cerita Teks Anekdot</h1>
+            <p>Hernando Alvoro</p>
+            <p>Kelas 10 RPL</p>
+        </div>
+    </div>
+
+    <div style="display: flex;" >
+        <div class="Cerita">
+            <div class="my-button">
+                <button class="Button" onclick="showText('Cerita1')">Kursi Patah di Industri</button>
+                <button class="Button" onclick="showText('Cerita2')">Rico & Pipin Jatuh</button>
+                <button class="Button" onclick="showText('Cerita3')">Guling - guling di Ekayana</button>
+                <button class="Button" onclick="showText('Cerita4')">Jam 11 & 12 Ekayana</button>
+                <button class="Button" onclick="showText('Cerita5')">Lionel di Blacklist</button>
+                <button class="Button" onclick="showText('Cerita6')">Meja Patah</button>
+                <button class="Button" onclick="showText('Cerita7')">Hujan - Hujanan</button>
+                <button class="Button" onclick="showText('Cerita8')">Stevanus Push-up</button>
+                <button class="Button" onclick="showText('Cerita9')">Batagor</button>
+                <button class="Button" onclick="showText('Cerita10')">Bola ke sita</button>
+                <button class="Button" onclick="showText('Cerita11')">Baut di pintu</button>
+                <button class="Button" onclick="showText('Cerita12')">Bonceng 3 Mixue</button>
+                <button class="Button" onclick="showText('Cerita13')">Kaos Kaki</button>
+                <button class="Button" onclick="showText('Cerita14')">Kepleset</button>
+                <button class="Button" onclick="showText('Cerita15')">Kegigit</button>
+            </div>
+        </div>
+    
+        <div id="textDisplay"></div>    
+    </div>
+
+    <script class="CeritaSemua">
+        const cerita = {
+            Cerita1: "Kejadian ini terjadi di Industri tepatnya di Greenlake, Pada saat itu Stevanus sedang duduk santai bersama Pak Ivan. Kemudian Kursi itu patah secara tiba - tiba dan membuat 1 RPL ketawa akibat Stevanus jatuh karena tidak melihat bahwa kursinya tidak kuat menampung Stevanus.",
+            Cerita2: "Pada saat itu Rico duduk di kursi sekitar jam 8.20 pagi bersama pak ivan di kursi plastik. Saat pipin jalan tepat dibelakang Rico, Rico tidak lihat kursinya sudah bengkok dan BRAKK, Rico jatuh bersamaan dengan pipin yang kaget dan ikut terjatuh 1 RPL ketawa.",
+            Cerita3: "Kejadian ini terjadi di Vihara Ekayana, saat sedang ikut volunteer di bidang Perlengkapan atau perkap di jam 3 untuk memasang karpet. saya atau Hernando, Felix, Lionel, Stella, Austin, dan 1 kakel temen Stella ( Lupa namanya ) saat pekerjaan saya sudah selesai memasang karpet, tiba - tiba saya, Austin dan Lionel kepikiran untuk guling - guling di karpet yang sudah di pasang. Karena jalan di Vihara Ekayana ada seperti tanjakan jadi bisa di pakai untuk guling - guling. saat sedang guling - guling saya langsung bangun dan pusing muter 7 keliling. dan Felix tertawa akibat guling - guling itu.",
+            Cerita4: "Cerita ini terjadi sebelum kejadian yang sebelumnya, masih di Vihara Ekayana di jam 11 & 12 malam. Kejadian ini berawal dari saya, Leo, Felix, Austin tidak bisa tidur. Kemudian Leo dan Felix keluar untuk membeli makanan dan minuman. Kemudian setelah mereka balik, mereka berdua membawa kopi dan 1 botol untuk mengisi kopi tersebut. Tetapi mereka lupa bahwa tidak ada air panas jadi dengan kepintaran Felix dan Leo, mereka membuat kopi menggunakan air yang tidak hangat jadi air normal. Kemudian di coba lah oleh Leo, Leo langsung berkata : Aduh, ga enak kocak kopinya ga panas. dan setelah itu pada saat jam 12, saya, Austin dan 1 Koko Binus. Bersama - sama bermain UNO kemudian Ko keines mengagetkan kami dan Kartu UNOnya disita setelah itu kita tertawa akibat Bermain UNO di tengah malam.",
+            Cerita5: "Cerita ini masih bersangkutan dengan Cerita sebelumnya. Pada saat sedang istirahat tidur di karpet kemudian ada Ko Andre yang menghampiri saya Lionel, Austin dan Leo. Kemudian Felix dan Austin cepu ke Ko Andre bahwa Lionel begadang ga tidur. Kemudian Ko Andre berkata : wah, Lionel parah banget lu, gua blacklist lu. Setelah itu Lionel menjadi kesal dan kami tertawa melihat Lionel yang sangat kesal.",
+            Cerita6: "Kejadian ini terjadi pad saat kami jamkos, Xues, Lionel, Felix, Saya dan beberapa teman saya panco di meja, kemudian meja tersebut menjadi patah akibat terlalu ditekan hingga kami panik dan di sertai ketawa.",
+            Cerita7: "Kejadian ini terjadi pada saat kami pulang menuju ke rumah bersama Wilbert, Felix, saya dan Stevanus. Perjalanan pulang ini menjadi perjalanan terasik karena pulang Hujan - Hujanan sehingga baju felix dan Wilbert basah kuyup, Stevanus sudah seperti orang yang sedang mandi karena basah.",
+            Cerita8: "Kejadian ini terjadi saat kami sedang paskib, tiba - tiba Stevanus balik ke lapangan dengan santainya dan Ko Chris melihat Stevanus dan memanggil untuk di beri hukuman dengan Push - up 50x sehingga kami tertawa terbahak - bahak.",
+            Cerita9: "Kejadian ini terjadi di Vihara Ekayana, saat Wirya lapar, saya, Felix menemani Wirya membeli Batagor. Felix menyarankan Wirya makan di dalam saja agar tidak mengganggu jalan dan tidak panas, kemudian Wirya meng iyakan dan terkena marah oleh Ko andre sehingga kami berdua tertawa hingga kecapean.",
+            Cerita10: "Kejadian ini terjadi di Sekolah, pada saat bermain bola basket di kelas, dribble bola basket yang sangat berisik. Kita di peringati oleh Pak Guna ( orang yayasan ) untuk tidak dribble atau di ambil bolanya. Keesokan harinya Stevanus bermain bola di pagi hari dan kena sita. Saya dan Felix, dan Pipin tertawa terbahak - bahak. Kemudian Stevanus ke atas bersama Pak Ivan untuk mengambil bolanya dan diizinkan.",
+            Cerita11: "Kejadian ini terjadi di sekolah Budi Agung, sekolah lama saya. Saya mempunyai teman bernama Emporich dan dia orangnya bar - bar, membuka pintu hingga suara kencang dan pintu kebanting hingga baut di pintu copot dan saya tertawa kencang sekali.",
+            Cerita12: "Kejadian ini terjadi pada saat pulang sekolah, saya, Stevanus dan Felix bonceng 3 ke Mixue dan pergi ber 3 beli eskrim. Setekah itu balik ke sekolah, tetapi eskrim itu mencair hingga terkena celana Stevanus dan saya, Felix Tertawa Hahahahaha.",
+            Cerita13: "Kejadian ini terjadi di Indsutri, saya, Lionel, Stevanus, Ken sepakat untuk iseng abhirat hingga kami tertawa karena kaos kakinya kami umpetin.",
+            Cerita14: "Kejadian ini terjadi pada saat mpls, Ken kepleset hingga 1 cetiya tertawa akibat ken jatuh. Tidak lama setelah itu ada Melvin Dwi yang kepleset dan 1 cetiya tertawa lagi.",
+            Cerita15: "Kejadian ini terjadi saat saya pulang les dekat rumah saya, saya takut ketika melihat anjing yang sudah ganas mukanya menyeramkan, kemudian papa saya yang mengantar saya pulang mendekati anjing itu dan Brak kaki saya di gigit dan sendal saya bolong, awalnya saya mengira giginya nyangkut di sendal itu ternyata sendalnya bolong dan nangis histeris saya. Dari situ saya dketawain oleh papa saya"
+        };
+
+        function showText(ceritaId) {
+            document.getElementById("textDisplay").textContent = cerita[ceritaId];
+        }
+    </script>
+
+</body>
+</html>
